@@ -1,9 +1,13 @@
 """
 Train a discrete neural net
 """
-
+# test something
+from pathlib import Path
+# somaga
+path = str(Path(__file__).parent.parent.absolute() / "src")
 import sys
-sys.path.insert(0, r"C:\Users\2019r\vscode-workspace\395W\Tripods2021UA\src")
+sys.path.insert(0, path)
+
 from discrete_neural_net import Neuron, Layer, NeuralNet
 from binary_image_polymorphisms import RotationAutomorphism, polymorphism_neighbor_func, hamming_distance
 from mnist_training_binary import binary_train_for_zero, show
